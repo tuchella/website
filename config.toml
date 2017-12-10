@@ -1,0 +1,4 @@
+baseURL = "https://larstuchel.ch/"
+languageCode = "en-us"
+title = "larstuchel.ch"
+theme = "blank"
