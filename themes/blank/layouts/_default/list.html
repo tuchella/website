@@ -2,7 +2,7 @@
 	<main>
 	    <div class="container">
 		<div class="row projects">
-            {{ /* The following lines use a dash (-) to prevent whitespace beeing added betwen li elements */ }}
+            <!-- The following lines use a dash (-) to prevent whitespace beeing added betwen li elements -->
             <ol>
 			{{ range .Data.Pages.ByTitle -}}
 				<li><a class="link" href="{{ .Permalink }}">{{ .Title }}</a></li>
