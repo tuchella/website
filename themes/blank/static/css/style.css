@@ -94,13 +94,104 @@
             }
         }
 
+main {
+    height: 100%;
+}
+
 .projects ol {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-family: monospace;
 }
-.projects ol li {
-    width: 10%;
-    display: inline-block;
+.link {
+	padding: 20px;
+}
+
+
+.link:hover {
+    background-color: black;
+    color: white;
+}
+.link.unborn {
+    color: black;
+    text-decoration: none;
+}
+.link.unborn:hover {
+    color: transparent;
+    background-color: transparent;
+}
+
+.projects {
+	min-height: 500px;
+	margin: auto;
+}
+.projects li {
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	vertical-align: middle;
+	line-height: 50px;
+	padding: 0;
+}
+.projects li a {
+    font-size: 1.2em;
+    width: 100%;
+    display: block;
+    padding: 0; /* reset padding as containing li already provides some... */
+    line-height: 50px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+.projects li a:hover {
+    border-color: black;
+    color: black;
+}
+
+@media only screen and (min-width:800px){
+	.projects li {
+		width: 10%;
+	}
+}
+
+p {
+	text-align: justify;
+    margin: 5px 0;
+}
+main article {
+    font-family: monospace;
+    margin-top: 30px;
+}
+
+main article h1 {
+    margin: 0;
+}
+main article img {
+    width: 100%;
+    margin: 5px 0;
+    border: 2px solid black;
+}
+main article div.separator {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 37.66%;
+    border-left: 3px solid black;
+    right: 0;
+}
+.page-links .page-link a {
+    border: 2px solid black;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    font-size: 0.8em;
+    color: black;
+}
+.page-links .page-link a:hover {
+    color: white;
+}
+.page-links .next-link a {
+    float: right;
+    text-align: right;
 }
