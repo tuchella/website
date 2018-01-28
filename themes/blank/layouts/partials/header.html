@@ -7,6 +7,7 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/normalize.min.css">
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/simple-grid.min.css">
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">

@@ -3,6 +3,9 @@ body {
     font-family: 'Fira Mono', monospace; 
     font-size: 12px;
 }
+pre {
+    font-family: 'Fira Mono', monospace; /* override monospace, monospace declaration of normalize.css */ 
+}
 
 footer {
     position: absolute;
