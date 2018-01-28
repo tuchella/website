@@ -1,22 +1,43 @@
 {{ partial "header.html" . }}
-    <div class="text">
-        <center class="big">
-        Hi, I'm Lars.
-        </center>
-        <center class="small">
-        I'm so glad you're here...
-        </center><!-- I'm so sorry -->
-    </div>
-    <div class="heart">
-        <center>
-        &#10084;
-        </center>
-    </div>
-	<!--<main>
-		{{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
-		{{ range $paginator.Pages }}
-			{{ partial "summary.html" . }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>-->
+<main style="background-color: black; color:white; width:100%; height:100%;">
+<div class="container">
+<div class="row console" style="color: white; background-color: black;font-family:monspace;line-height:1em;">
+<div class="col-12">
+<p><span class="prompt">you@larstuchel.ch</span>: ~$ cat welcome.txt
+<pre class="screen-only">
+
+
+██╗  ██╗██╗       ██╗███╗   ███╗    ██╗      █████╗ ██████╗ ███████╗
+██║  ██║██║       ██║████╗ ████║    ██║     ██╔══██╗██╔══██╗██╔════╝
+███████║██║       ██║██╔████╔██║    ██║     ███████║██████╔╝███████╗
+██╔══██║██║       ██║██║╚██╔╝██║    ██║     ██╔══██║██╔══██╗╚════██║
+██║  ██║██║▄█╗    ██║██║ ╚═╝ ██║    ███████╗██║  ██║██║  ██║███████║
+╚═╝  ╚═╝╚═╝╚═╝    ╚═╝╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+
+
+</pre>
+<pre class="mobile-only">
+Hi, I'm Lars
+</pre>
+<p><span class="prompt">you@larstuchel.ch</span>: ~$ echo "I'm so glad you're here &lt;3"
+<p>I'm so glad you're here &lt;3
+<p><span class="prompt">you@larstuchel.ch</span>: ~$ ls<span class="screen-only"> -la</span>
+<pre class="screen-only">
+total 21K
+drwxr--r-- 1 lt lt 0   Jan 27 20:17 ./
+drwx------ 1 lt lt 0   Jan 27 20:16 ../
+drwxr--r-- 1 lt lt 0   Jan 27 20:17 <a href="about">about/</a>
+drwxr--r-- 1 lt lt 0   Jan 27 20:16 <a href="projects">projects/</a>
+-rw-r--r-- 1 lt lt 610 Jan 27 20:17 welcome.txt
+</pre>
+<pre class="mobile-only">
+<a href="about">about/</a>
+<a href="projects">projects/</a>
+welcome.txt
+</pre>
+<p><span class="prompt">you@larstuchel.ch</span>: ~$ <span id="blinky-mcblinkface" class="block">█</span>
+</div>
+</div>
+</div>
+</main>
 {{ partial "footer.html" . }}
