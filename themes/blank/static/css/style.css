@@ -137,6 +137,7 @@ main article div.separator {
     margin: 0;
     padding: 0;
     line-height: 1.4em;
+    overflow: hidden;
 }
 .console .prompt {
     font-weight: bold;
