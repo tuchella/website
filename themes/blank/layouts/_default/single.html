@@ -6,7 +6,9 @@
                 <div class="col-5"></div>
                 <div class="col-7">
                     <a href="{{.Site.BaseURL}}">~/</a>
+                    {{ if .Section }}
                     <a href="{{.Site.BaseURL}}/{{.Section}}">{{.Section}}/</a>
+                    {{ end }}
 			        <h1>{{ .Title }} <span>({{ .Date.Format "2006" }})</span></h1>
                 </div>
 			</div>
@@ -33,13 +35,13 @@
                     {{end}}
                 </div>
             </div>
-			<div>
+			<!--<div>
 				<ul id="tags">
 					{{ range .Params.tags }}
 					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
 					{{ end }}
 				</ul>
-			</div>
+			</div>-->
 		</article>
 	</main>
 {{ partial "footer.html" . }}
