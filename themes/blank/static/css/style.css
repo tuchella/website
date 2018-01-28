@@ -176,6 +176,8 @@ main article div.separator {
 }
 .editor .editor-close a,
 .editor .editor-close a:hover {
+    display: block;
+    width: 100%;
     color: white;
     text-decoration: none;
 }
