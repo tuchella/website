@@ -37,6 +37,11 @@ drwxr--r-- 1 lt lt 0   Jan 27 20:16 <a href="projects">projects/</a>
 <a href="projects">projects/</a>
 welcome.txt
 </pre>
+{{$posts := ($.Site.GetPage "section" "projects").Pages}}
+<!--Grab the most recent-->
+{{ range first 1 $posts }}
+<p><span class="prompt">you@larstuchel.ch</span>: ~$ vi <a href="{{.Permalink }}">~/{{ replace .File.Dir "\\" "/" }}{{ .File.LogicalName }}</a></p>
+{{ end }}
 <p><span class="prompt">you@larstuchel.ch</span>: ~$ <span id="blinky-mcblinkface" class="block">█</span>
 </div>
 </div>
