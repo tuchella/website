@@ -17,6 +17,9 @@
                     {{ range .Params.images }}
                         <img src="/img/{{ . }}" alt="idk" />
                     {{ end }}
+                    {{ if .Params.imageCredit }}
+                    <i><small>image {{- if gt (len .Params.images) 1}}s{{ end }} by {{ .Params.imageCredit }}</small></i>
+                    {{ end }}
                 </div>
                 <div class="col-7">
 				{{ .Content }}
