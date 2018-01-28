@@ -9,7 +9,7 @@
                     {{ if .Section }}
                     <a href="{{.Site.BaseURL}}/{{.Section}}">{{.Section}}/</a>
                     {{ end }}
-			        <h1>{{ .Title }} <span>({{ .Date.Format "2006" }})</span></h1>
+			        <h1>{{ .Title }} <span>({{ .Date.Format "2006" }}{{ if .Params.dateUntil }} - {{ .Params.dateUntil }}{{ end }})</span></h1>
                 </div>
 			</div>
             <div class="row">
