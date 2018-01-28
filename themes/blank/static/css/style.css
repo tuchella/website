@@ -3,6 +3,7 @@ body {
     font-family: 'Fira Mono', monospace; 
     font-size: 12px;
 }
+
 pre {
     font-family: 'Fira Mono', monospace; /* override monospace, monospace declaration of normalize.css */ 
 }
@@ -19,6 +20,15 @@ footer {
 
 main {
     min-height: 100%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+p {
+	text-align: justify;
+    margin-bottom: 0 0 1em;
 }
 
 .projects ol {
@@ -78,10 +88,6 @@ main {
 	}
 }
 
-p {
-	text-align: justify;
-    margin: 5px 0;
-}
 main article {
     margin-top: 30px;
 }
