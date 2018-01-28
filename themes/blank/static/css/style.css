@@ -33,6 +33,7 @@ main {
     color: white;
 }
 .link.unborn {
+    cursor: default;
     color: black;
     text-decoration: none;
 }
