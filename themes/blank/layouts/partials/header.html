@@ -7,6 +7,17 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{- if .Params.og -}}
+        {{- with .Params.og.description -}}
+    <meta name="og:description" content="{{ . }}">
+    <meta name="twitter:description" content="{{ . }}">
+        {{- end -}}    
+        {{- with .Params.og.title }}
+    <meta name="og:title" content="{{ . }}">
+    <meta name="twitter:title" content="{{ . }}">
+        {{- end }}    
+    <meta name="og:url" content="{{ .Permalink }}" >
+    {{ end }}
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/normalize.min.css">
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/simple-grid.min.css">
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
