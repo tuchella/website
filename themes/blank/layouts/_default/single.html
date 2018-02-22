@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-5">
                     {{ range .Params.images }}
-                        <img src="/img/{{ . }}" alt="idk" />
+                        <a href="/img/{{ . }}" target="_blank"><img src="/img/{{ . }}" alt="an image" /></a>
                     {{ end }}
                     {{ if .Params.imageCredit }}
                     <i><small>image {{- if gt (len .Params.images) 1}}s{{ end }} by {{ .Params.imageCredit }}</small></i>
