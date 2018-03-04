@@ -3,8 +3,8 @@
 		<article class="container">
             <div class="separator" style="background-color: {{ .Params.color }}"></div>
             <div class="row">
-                <div class="col-5"></div>
-                <div class="col-7">
+                <div class="col-4"></div>
+                <div class="col-8">
                     <a href="{{.Site.BaseURL}}">~/</a>
                     {{ if .Section }}
                     <a href="{{.Site.BaseURL}}/{{.Section}}">{{.Section}}/</a>
@@ -13,7 +13,7 @@
                 </div>
 			</div>
             <div class="row">
-                <div class="col-5">
+                <div class="col-4">
                     {{ range .Params.images }}
                         <a href="/img/{{ . }}" target="_blank"><img src="/img/{{ . }}" alt="an image" /></a>
                     {{ end }}
@@ -21,7 +21,7 @@
                     <i><small>image {{- if gt (len .Params.images) 1}}s{{ end }} by {{ .Params.imageCredit }}</small></i>
                     {{ end }}
                 </div>
-                <div class="col-7">
+                <div class="col-8">
 				{{ .Content }}
                 </div>
             </div>

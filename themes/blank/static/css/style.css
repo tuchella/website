@@ -140,7 +140,7 @@ main article div.separator {
 }
 @media only screen and (min-width:45em) {
     main article div.separator {
-        left: 37.66%;
+        left: 35%;
         border-left: 3px solid black;
     }
 }
