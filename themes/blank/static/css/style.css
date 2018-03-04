@@ -57,6 +57,9 @@ p {
 	text-align: justify;
     margin-bottom: 0 0 1em;
 }
+iframe {
+    border: none !important;
+}
 
 .projects ol {
     list-style-type: none;
