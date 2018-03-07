@@ -25,10 +25,18 @@
        url('/fonts/fira-mono-v6-latin-700.svg#FiraMono') format('svg'); /* Legacy iOS */
 }
 
+html {
+    font-size: 12px;
+}
+@media only screen and (min-width:800px){
+    html {
+        font-size: 16px;
+    }
+}
+
 body {
     background-color: white; 
     font-family: 'Fira Mono', monospace; 
-    font-size: 12px;
 }
 
 pre {
@@ -53,10 +61,14 @@ strong {
     font-weight: 700;
 }
 
-p {
+p, li {
 	text-align: justify;
     margin-bottom: 0 0 1em;
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 1.8;
 }
+
 iframe {
     border: none !important;
 }
@@ -129,6 +141,7 @@ main article img {
     width: 100%;
     margin: 5px 0;
     border: 2px solid black;
+    box-sizing: border-box;
 }
 
 main article div.separator {
