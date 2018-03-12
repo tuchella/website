@@ -1,7 +1,7 @@
 baseURL = "https://larstuchel.ch/"
 languageCode = "en-us"
 title = "larstuchel.ch"
-description = "Hi I'm Lars's website. You can visit me if you like."
+description = "Hi I'm Lars' website. You can visit me if you like."
 theme = "blank"
 
 [taxonomies]
