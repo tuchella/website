@@ -1,0 +1,25 @@
+<div class='column audio-player' style="max-height: 150px;">
+    <noscript>
+        <audio src="{{ . }}" controls ></audio>
+    </noscript>
+    <div id="waveform"></div>
+    <div id="waveform-ctls" class="hidden">
+        <button class="play-button is-play" onclick="this.classList.toggle('is-play'); wavesurfer.playPause();">
+            <div class="play-button__icon"></div>
+        </button>
+        <span class="loading-text" style="color:white">loading...</span>
+    </div>
+
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'gray',
+            progressColor: 'white'
+        });
+        wavesurfer.on('ready', function () {
+            document.getElementById("waveform-ctls").classList.add('ready');
+        });
+        document.getElementById("waveform-ctls").classList.remove('hidden');
+        wavesurfer.load({{ . | relURL }});
+    </script>
+</div>

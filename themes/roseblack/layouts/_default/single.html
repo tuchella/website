@@ -1,0 +1,38 @@
+{{ define "head" }}
+{{ if isset .Params "audio" }}
+<script src="{{ "js/wavesurfer.js" | relURL }}"></script>
+{{ end }}
+{{ end }}
+{{ define "main" }}
+<div style="width: 100%; min-height: 100vh; background-color: #0E0909; padding: 0 0;">
+    <div class="container"
+        style="min-height: 5em; display: flex; flex-direction: column; height: 100%; padding-top: 20vh;">
+        <div class="row" style="flex-grow: 2;">
+            {{ with .Param "vimeo" }}
+            <div class='column embed-container'>
+                <iframe src='{{ . }}' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </div>
+            {{ end }}    
+            {{ with .Param "audio" }}
+            {{- partial "audioplayer.html" . -}}
+            {{ end }}  
+            <div class="one-third column u-pull-right">
+                <span class="u-pull-right" style="width:100%; text-align: right; font-weight: bold; color:white; font-size: 2em;">{{ .Title }} ({{ .Date.Format "2006" }})</span>
+                <span class="u-pull-right" style="text-align: right; color:white; font-size: 1em;">{{ .Param "kind" }}</span>
+                <span class="u-clear"> </span>
+            </div>
+            <div class="two-thirds column" style="color: white; margin: 0; padding-top: 1em;">
+                {{ with .Param "embed" }}
+                    {{ safeHTML . }}
+                {{ end }}  
+                <div class="entry__content">{{ .Content }}</div>                 
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-third column">&nbsp;{{with .Next}}<a class="work-nav-link left"  href="{{.Permalink}}">&lt; PREV</a>{{ end }}</div>
+            <div class="one-third column">&nbsp;{{with .Parent}}<a class="work-nav-link center" href="{{.Permalink}}"> VIEW ALL</a>{{ end }}</div>
+            <div class="one-third column">&nbsp;{{with .Prev}}<a class="work-nav-link right" href="{{.Permalink}}">NEXT &gt;</a>{{ end }}</div>
+        </div>
+    </div>
+</div>
+{{ end }}

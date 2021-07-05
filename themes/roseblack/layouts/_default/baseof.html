@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html {{ if .IsHome }}class="pink"{{ end }}>
+    <head>
+        {{- partial "head.html" . -}}
+        {{- block "head" . }}{{- end }}
+    </head>
+    <body>
+        {{- partial "header.html" . -}}
+        {{- block "main" . }}{{- end }}
+    </body>
+</html>

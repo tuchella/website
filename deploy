@@ -1,9 +1,0 @@
-#!/bin/sh
-USER=hugo
-HOST=larstuchel.ch
-DIR=/var/www/html   # might sometimes be empty!
-
-rm -r ./public/*
-hugo && rsync -avz --delete public/ ${USER}@${HOST}:${DIR}
-
-exit 0

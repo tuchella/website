@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('../fonts/Atkinson-Hyperlegible-Regular-102.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Atkinson-Hyperlegible-Regular-102.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Atkinson-Hyperlegible-Regular-102.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Atkinson-Hyperlegible-Regular-102.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-weight:  bold;
+  src: url('../fonts/Atkinson-Hyperlegible-Bold-102.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Atkinson-Hyperlegible-Bold-102.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Atkinson-Hyperlegible-Bold-102.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Atkinson-Hyperlegible-Bold-102.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

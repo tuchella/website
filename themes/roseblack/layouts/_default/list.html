@@ -1,0 +1,23 @@
+{{ define "main" }}
+<!--
+    <div class="container" style="min-height: 5em; height: 100%; padding-top: 20vh;">
+        <div class="row" style="display: flex; flex-wrap: wrap; ">
+        -->
+<div style="width: 100%; min-height: 100vh; display: flex; align-items: stretch; overflow: hidden;">
+        <div style="flex-grow: 1; display: flex; flex-direction: row; flex-wrap: wrap; padding-top: 6em; align-items: stretch;">
+            {{ range .Pages.ByPublishDate.Reverse }}
+            <div class='archive-item-container' style="background-image: url({{ .Param "image" | relURL }});">
+                <a class="archive-item" href="{{ .RelPermalink }}" >
+                    <div class="archive-item-text__container">
+                        <span class="archive-item-text">
+                            <span class="archive-item-title">{{ .Title }}</span> 
+                            <span class="archive-item-date">{{ .Date.Format "2006" }}</span>
+                            <span class="archive-item-kind">{{ .Param "kind" }}</span>
+                        </span>
+                    </div>                    
+                </a>
+            </div>
+            {{ end }}
+        </div>
+</div>
+{{ end }}

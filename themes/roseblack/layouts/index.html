@@ -1,0 +1,121 @@
+{{ define "main" }}
+<div id="works" style="width: 100%; min-height: 100vh; background-color: #0E0909; padding: 1em 0;">
+    <div class="container" style="min-height: 5em;">
+        <div class="row works-container">
+            <div class="column">
+                <div class="works">
+                    
+                    {{ range first 11 (where (where .Site.Pages.ByDate.Reverse "Type" "works") "Kind" "page") }}
+                        <a href="{{ .RelPermalink }}" class="works-item" style="background-image: url({{ .Param "image" | relURL }});"><span
+                            class="work-name">{{ .Title }} ({{ .Date.Format "2006" }}) </span></a>
+                    {{ end }}
+                    <a href="/works" class="works-item"><span class="work-name">ARCHIVE</span></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <span class="u-pull-right" style="font-weight: bold; color:white; font-size: 2em;">works</span>
+                <span class="u-clear"> </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="about" class="container">
+    <div class="row">
+        <div class="column">
+            <span class="title">
+                about
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="one-third column"><img src="{{ "images/me.jpg" | relURL }}" style="width: 100%; height: auto;"> </img></div>
+        <div class="two-thirds column" style="text-align: justify;  ">
+            <h3>Short version</h3>
+            <p>I make music, code music, compose music and listen to music</p>
+            <h3>Slightly Longer Version</h3>
+            <p>I'm a musician and coder from Switzerland. Exploring conflicts and synergies of human/computer relationships 
+                in fixed-media pieces, interactive sound installations and live coding performances. My work acts as 
+                a means to explore new ways of interacting with an ever expanding digital world. All while trying and failing 
+                to help both the general public and myself to understand how we can mold that world.<br>
+                
+                After a professional education in software development I'm currently completing a BA Sound Arts at 
+                Hochschule der Künste Bern.</p>
+                <p>
+                (1994 - )
+                </p>
+        </div>
+    </div>
+</div>
+<div class="dates-container" data-speed="3" style="background-image: url({{ "images/dates.jpg" | relURL }});">
+    <div id="dates" class="container" style="margin-top: 2em;">
+        <div class="row">
+            <div class="column">
+                <span class="title">
+                    dates
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one column"></div>
+            <div class="ten columns" style="text-align: justify;  ">
+                living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find me on
+                facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
+                upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
+                website. you are currently visiting that website.
+                <br>
+                working 50% as a software developer (mostly java stuff, with sprinkles of web development, containers
+                and ivy)
+                and 50% as a BA student in philosophy at the university bern.
+                <br>
+                if your favourite site is not listed and you nonetheless would like to get in touch with me you can also
+                drop
+                me an email.
+                <br>
+                (1994 - )
+            </div>
+            <div class="one column"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id="contact" class="container" style="margin-top: 2em;">
+    <div class="row">
+        <div class="one-half column">
+            <span class="title">
+                contact
+            </span>
+        </div>
+        <div class="one-half column" style="text-align: justify;  ">
+            living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find me on
+            facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
+            upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
+            website. you are currently visiting that website.
+            <br>
+            working 50% as a software developer (mostly java stuff, with sprinkles of web development, containers and
+            ivy)
+            and 50% as a BA student in philosophy at the university bern.
+            <br>
+            if your favourite site is not listed and you nonetheless would like to get in touch with me you can also
+            drop
+            me an email.
+            <br>
+            (1994 - )living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find
+            me on
+            facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
+            upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
+            website. you are currently visiting that website.
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="js/main.js"></script>
+{{ end }}

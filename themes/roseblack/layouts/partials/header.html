@@ -1,0 +1,32 @@
+<div class="header">
+    <div style="border-bottom: 1px solid grey;  box-sizing: border-box;">
+        <div class="container">
+            <div class="row">
+                <div class="one-third column nav-container">
+                    <a href="{{ .Site.BaseURL }}">
+                        <h1>lars <span class="fabian">fabian </span>tuchel</h1>
+                    </a>
+                </div>
+                <div class="two-thirds column nav-container">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="{{ if not .IsHome }}{{ .Site.BaseURL }}{{ end }}#works">Works</a>
+                            </li>
+                            <li>
+                                <a href="{{ if not .IsHome }}{{ .Site.BaseURL }}{{ end }}#about">About</a>
+                            </li>
+                            <li>
+                                <a href="{{ if not .IsHome }}{{ .Site.BaseURL }}{{ end }}#dates">Dates</a>
+                            </li>
+                            <li>
+                                <a href="{{ if not .IsHome }}{{ .Site.BaseURL }}{{ end }}#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

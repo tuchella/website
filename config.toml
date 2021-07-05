@@ -1,13 +1,5 @@
-baseURL = "https://larstuchel.ch/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
-description = "Hi I'm Lars' website. You can visit me if you like."
-theme = "blank"
-DefaultContentLanguage = "en"
-
-[languages]
-  [languages.en]
-    title = "larstuchel.ch"
-  [languages.de]
-    title = "larstuchel.ch"
-    
-[taxonomies]
+title = "lars fabian tuchel"
+theme = "roseblack"
+summaryLength = 10
