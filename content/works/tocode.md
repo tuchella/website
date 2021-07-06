@@ -7,6 +7,6 @@ vimeo: "https://player.vimeo.com/video/361764339"
 image: "images/tocode.jpg"
 ---
 
-Mit: TidalCycles
+w/ TidalCycles
 
-Jedem akustisch erzeugten Klang geht notwendigerweise eine physische Bewegung voraus, oft in der Form eines menschlichen Körpers. Bei elektronisch und digital erzeugten Klängen scheint es diese Beziehung nicht mehr zu geben. Doch hinter jedem solchen Klang stecken Unmengen an Zeilen Code, die die Klangerzeugung erst möglich machen. Dieser Code wiederum ist durch menschliche Bewegungen hinter Bildschirm und Tastatur entstanden. Eine Beziehung zwischen Körper und Klang existiert also ebenso im Digitalen, wenn auch indirekter und zeitlich verzögert. In der Live-Coding Performance soll diese Beziehung beleuchtet werden. Die Körperlichkeit im Akt der Programmierung wird zum Akt des Musizierens.
+Every acoustically generated sound is necessarily preceded by physical movement, often in the form of a human body. With electronically and digitally generated sounds, this relationship no longer seems to exist. But behind every such sound there is a vast amount of code that makes the sound production possible in the first place. This code, in turn, is created by human movements behind a screen and a keyboard. A relationship between body and sound therefore also exists in the digital world, albeit more indirectly and with a time delay. The live-coding performance will shed light on this relationship. The physicality in the act of programming becomes the act of making music. 

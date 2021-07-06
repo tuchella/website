@@ -9,7 +9,7 @@
                         <a href="{{ .RelPermalink }}" class="works-item" style="background-image: url({{ .Param "image" | relURL }});"><span
                             class="work-name">{{ .Title }} ({{ .Date.Format "2006" }}) </span></a>
                     {{ end }}
-                    <a href="/works" class="works-item"><span class="work-name">ARCHIVE</span></a>
+                    <a href="/works" class="works-item" style="background-image: url({{ "images/archive.jpg" | relURL }});"><span class="work-name">ARCHIVE</span></a>
                 </div>
 
             </div>

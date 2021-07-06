@@ -7,6 +7,6 @@ duration: "8:33"
 image: "images/hush.jpg"
 ---
 
-*hello*
+Live coding performance. 
 
-This is great. well...
+Sounds genarated with four instances of a self-made Max/MSP synthesizer.

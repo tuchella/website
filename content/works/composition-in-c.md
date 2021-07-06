@@ -3,6 +3,7 @@ title: "composition in U+0044 major"
 date: 2016-12-01T00:00:00+01:00
 draft: true
 kind: "live-coding performance"
+image: "images/comp.jpg"
 ---
 
 I got the chance to perform at Manifesta 11 in Zurich as part of the series *Cabaret der Künstler - Zunfthaus Voltaire*. It was pretty scary to perform in front of an audience for the first time. But it was great! Even though not everything worked out as I planned. The performance is described [in the concept](/img/02/concept.jpg) I submitted. The first image shows the screen on the  stage after I left. Dots representing a note played by the pianist, colons notes played by the algorithm. 

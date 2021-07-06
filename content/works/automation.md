@@ -7,6 +7,4 @@ duration: "2:30"
 image: "images/automation2.jpg"
 ---
 
-*hello*
-
-This is great. well...
+Cellular automata, automated.
