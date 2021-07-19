@@ -154,7 +154,7 @@ nav {
     .works {
         display: flex; flex-direction: row; flex-wrap: wrap;
     }
-    .works-item{
+    .works-item {
         flex-grow: 1;
         background-color: #111;
         margin: 0.1em;
@@ -173,11 +173,41 @@ nav {
         color: $secondary;
         padding: 0.3em 0.5em;
         
-        &:hover{
-            color: $primary;
+        &:hover, &:focus {
+            .work-name {
+                color: #BAA;
+            }
+        }
+    }
+
+    .works-item.archive-link {
+        position: relative;
+
+        .archive-link__entries {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .archive-link__entry {
+                width: 100%;
+                display: none;
+                background-position: 50% 50%;
+                background-size: auto 800%; 
+                height: 9.3%; 
+                background-color: black;
+            } 
+            &:hover {
+                filter: gray; /* IE6-9 */
+                -webkit-filter: grayscale(100%); 
+            }
         }
     }
 }
+
+
 
 /* ARCHIVE LIST -------------------------------- */
 .archive-item-container {
@@ -193,12 +223,6 @@ nav {
     -webkit-filter: grayscale(100%); 
     max-width: 500px;
 
-    &:hover, &:focus {
-        .archive-item::after {
-            border-width: 5px;
-            background-color: rgba(0, 0, 0, 0.9);
-        }   
-    }
     /*
     &::before {
         content: " ";
@@ -242,6 +266,10 @@ nav {
 
         &:hover, &:focus {
             color: $primary;
+            &::after {
+                border-width: 5px;
+                background-color: rgba(0, 0, 0, 0.9);
+            }   
         }
         .archive-item-text__container {
             width: 100%; 
@@ -364,6 +392,10 @@ nav {
             border-bottom: 10px solid transparent;
             border-left: 10px solid $primary;
         }
+
+        &:focus {
+            background-color: #444;
+        }
     }
     .loading-text {
         color: $primary;
@@ -419,6 +451,9 @@ nav {
                 color: #BAA;
             }
         }
+        .works-item.archive-link .archive-link__entries .archive-link__entry {
+            display: block;
+        }
     }
     .title {
         font-size: 7em;
@@ -443,4 +478,9 @@ nav {
 /* PAGE CONTENT -------------------------------- */
 .entry__content img {
     width: 100%;
+}
+
+code {
+    background: none;
+    border: none;
 }

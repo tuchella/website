@@ -1,7 +1,7 @@
 ---
 title: "wie wasser am meer"
 date: 2020-02-01T19:29:51+01:00
-draft: true
+draft: false
 kind: "fixed media"
 duration: "2:30"
 image: "images/bandprobe.jpg"

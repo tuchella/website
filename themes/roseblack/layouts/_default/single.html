@@ -29,9 +29,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="one-third column">&nbsp;{{with .Next}}<a class="work-nav-link left"  href="{{.Permalink}}">&lt; PREV</a>{{ end }}</div>
+            <div class="one-third column">&nbsp;{{with .Prev}}<a class="work-nav-link left"  href="{{.Permalink}}">&lt; PREV</a>{{ end }}</div>
             <div class="one-third column">&nbsp;{{with .Parent}}<a class="work-nav-link center" href="{{.Permalink}}"> VIEW ALL</a>{{ end }}</div>
-            <div class="one-third column">&nbsp;{{with .Prev}}<a class="work-nav-link right" href="{{.Permalink}}">NEXT &gt;</a>{{ end }}</div>
+            <div class="one-third column">&nbsp;{{with .Next}}<a class="work-nav-link right" href="{{.Permalink}}">NEXT &gt;</a>{{ end }}</div>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: "attuned"
 date: 2017-12-01T00:00:00+01:00
-draft: true
+draft: false
 kind: "interactive installation"
 vimeo: "https://player.vimeo.com/video/259574393"
 image: "images/attuned.png"

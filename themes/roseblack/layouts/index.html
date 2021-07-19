@@ -5,11 +5,18 @@
             <div class="column">
                 <div class="works">
                     
-                    {{ range first 11 (where (where .Site.Pages.ByDate.Reverse "Type" "works") "Kind" "page") }}
+                    {{ range first 11 (where (where .Site.Pages "Type" "works") "Kind" "page") }}
                         <a href="{{ .RelPermalink }}" class="works-item" style="background-image: url({{ .Param "image" | relURL }});"><span
                             class="work-name">{{ .Title }} ({{ .Date.Format "2006" }}) </span></a>
                     {{ end }}
-                    <a href="/works" class="works-item" style="background-image: url({{ "images/archive.jpg" | relURL }});"><span class="work-name">ARCHIVE</span></a>
+                    <a href="/works" class="works-item archive-link" ><span class="work-name">ARCHIVE</span>
+                        <div class="archive-link__entries">
+                            
+                            {{ range first 11 (where (where .Site.Pages "Type" "works") "Kind" "page") }}
+                            <span class="archive-link__entry" style="background-image: url({{ .Param "image" | relURL }});"></span>
+                            {{ end }}
+                        </div>
+                    </a>
                 </div>
 
             </div>
@@ -59,24 +66,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="one column"></div>
+            <div class="one column">&nbsp;</div>
             <div class="ten columns" style="text-align: justify;  ">
-                living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find me on
-                facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
-                upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
-                website. you are currently visiting that website.
-                <br>
-                working 50% as a software developer (mostly java stuff, with sprinkles of web development, containers
-                and ivy)
-                and 50% as a BA student in philosophy at the university bern.
-                <br>
-                if your favourite site is not listed and you nonetheless would like to get in touch with me you can also
-                drop
-                me an email.
-                <br>
-                (1994 - )
+                <h3>Coming up</h3>
+                <table style="width:100%">
+                    <tr><td style="width: 25%">08/2021</td><td>Alpentöne Festival, Uri</td></tr>
+                </table>
+                <h3>Past</h3>
+                <table style="width:100%; margin-bottom: 4em">
+                    <tr><td style="width: 25%">05/2021</td><td>à suivre #39 @ HKB Bern</td></tr>
+                    <tr><td style="width: 25%">03/2020</td><td>IRCAM Forum, Paris</td></tr>
+                    <tr><td style="width: 25%">09/2019</td><td>Next Generation @ ZKM, Karlsruhe</td></tr>
+                    <tr><td style="width: 25%">09/2019</td><td>Next Generation @ ZKM, Karlsruhe</td></tr>
+                    <tr><td style="width: 25%">09/2019</td><td>Next Generation @ ZKM, Karlsruhe</td></tr>
+                    <tr><td style="width: 25%">09/2019</td><td>Next Generation @ ZKM, Karlsruhe</td></tr>
+                    <tr><td style="width: 25%">09/2019</td><td>Next Generation @ ZKM, Karlsruhe</td></tr>
+                </table>
             </div>
-            <div class="one column"></div>
+            <div class="one column">&nbsp;</div>
         </div>
     </div>
 </div>
@@ -90,27 +97,70 @@
             </span>
         </div>
         <div class="one-half column" style="text-align: justify;  ">
-            living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find me on
-            facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
-            upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
-            website. you are currently visiting that website.
-            <br>
-            working 50% as a software developer (mostly java stuff, with sprinkles of web development, containers and
-            ivy)
-            and 50% as a BA student in philosophy at the university bern.
-            <br>
-            if your favourite site is not listed and you nonetheless would like to get in touch with me you can also
-            drop
-            me an email.
-            <br>
-            (1994 - )living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find
-            me on
-            facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
-            upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
-            website. you are currently visiting that website.
+            <p>
+                living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find me on
+                facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
+                upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
+                website. you are currently visiting that website.
+                <br>
+                working 50% as a software developer (mostly java stuff, with sprinkles of web development, containers and
+                ivy)
+                and 50% as a BA student in philosophy at the university bern.
+            </p>
+            <p>
+                if your favourite site is not listed and you nonetheless would like to get in touch with me you can also
+                drop
+                me an email.
+            </p>
+            <p>
+                (1994 - )living in bern, switzerland. you can find me on github and on soundcloud (for now). you won’t find
+                me on
+                facebook, neither on linkedin. i had a twitter account once but I deleted since. same goes for reddit. i
+                upload videos to vimeo instead of youtube. sometimes you can also find me outside. furthermore i have a
+                website. you are currently visiting that website.
+                <a href="" id="mail"></a> (Beware! Link opens external mail program)
+            </p>
+            <noscript>
+                <div style="border: 1px solid black; background-color: #ddd; padding: 1em; margin: 1em 0;">
+                    <h3>say no to scripts</h3>
+                    <p style="margin-bottom: 0;">
+                        Email address decryption only works with javascript, which you don't have enabled. So here is an image instead:
+                        <br>
+                        <img style="width:100%" src="{{ "images/mail.png" | relURL }}" />
+                    </p>
+                </div>
+            </noscript>
         </div>
     </div>
 
+    <script type="text/javascript">
+    function uncryptMailto(s) {
+        var n=0;
+        var r="";
+        for(var i=0; i < s.length; i++) {
+            n=s.charCodeAt(i);
+            if (n>=8364) {n = 128;}
+            r += String.fromCharCode(n-(1));
+        }
+        return r;
+    }
+    function uncryptMailtoLink(s)	{
+        const mailLink = document.getElementById("mail");
+        if (!mailLink.href.startsWith("mailto:")) {
+            mailLink.href = uncryptMailto("nbjmup;mbst.uvdifmApvumppl/dpn");
+            mailLink.innerHTML = uncryptMailto("mbst.uvdifmApvumppl/dpn");
+        }
+        console.log(mailLink.href);
+    }
+    
+    {
+        const mailLink = document.getElementById("mail");
+        mailLink.addEventListener('mouseover', () => uncryptMailtoLink()); 
+        mailLink.addEventListener('focus', () => uncryptMailtoLink()); 
+        mailLink.innerHTML = 'l**********l@outlook.com';
+    }
+    </script>
+    
 </div>
 </div>
 </div>

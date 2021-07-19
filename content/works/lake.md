@@ -1,13 +1,14 @@
 ---
 title: "Lake"
 date: 2017-07-03T16:56:11+02:00
-draft: true
+draft: false
+vimeo: "https://player.vimeo.com/video/258396469"
 image: "images/lake.png"
 ---
 
-Listen: Not to me - I don’t have anything to say - but to the world. I think it’s really weird how are visual perception is so dominant. We often find ourselves in awe of a stunning scenery. A sunset, a waterfall, a mountain range, the eyes of another person.
+Our visual perception seems to be dominant. We often find ourselves in awe of a stunning scenery: A sunset, a waterfall, a mountain range, the eyes of another person.
 
-Our other senses seem to be insufficient in this regard, a mere underlining of our visual impressions. But that’s a mistake. When you listen, you can find complex sounds, rhythms and melodies everywhere. Sound images that could only be reproduced synthetically with great difficulty. But even then these would only be reproductions. No spontaneity, without an entire ecosystem - the smallest insect, the weakest wave, the softest air blast an integral component - that composes a symphony together, bleak.
+Our other senses seem to be insufficient in this regard, a mere underlining of our visual impressions. On vacation we make photo albums, never sound collections.
 
-There is music in every breath of a swimmer in the distance, in the menacing growling of the wind, in the waves crashing on the shore, in insects buzzing, in the birds chirping. There is music in everything. Therefore: Listen. To everything.
+There is music in every breath of a swimmer in the distance, in the menacing growling of the wind, in the waves crashing on the shore, in insects buzzing, in the birds chirping. There is music in everything. Awe-inspiring music.
 
