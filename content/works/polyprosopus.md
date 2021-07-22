@@ -5,7 +5,7 @@ draft: false
 kind: "interactive installation/ composition"
 duration: "N/A (7:36)"
 image: "images/gsicht.png"
-audio: "audio/walking2.wav"
+audio: "https://tuchella-files.fra1.cdn.digitaloceanspaces.com/website/polyprosopus-stereo.mp3"
 ---
 
 “Du Idiot”. Ein solcher Ausspruch kann unter Freunden ein Ausdruck von Nähe sein. Wird der gleiche Satz hingegen gegenüber der Chefin geäussert kann dies zu einer fristlosen Entlassung, bei einem Polizisten zu einer saftigen Buse, oder bei einem fremden auf der Strasse zu einem blauen Auge führen. 
