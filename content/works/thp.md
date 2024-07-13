@@ -2,7 +2,7 @@
 title: "The Halting Problem"
 date: 2021-06-02T19:29:51+01:00
 draft: true
-kind: "live performance"
+media: "live performance"
 duration: "17:00"
 vimeo: "https://player.vimeo.com/video/503023464"
 image: "images/thp.png"

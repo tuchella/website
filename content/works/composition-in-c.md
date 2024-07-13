@@ -2,7 +2,7 @@
 title: "composition in U+0044 major"
 date: 2016-12-01T00:00:00+01:00
 draft: false
-kind: "live-coding performance"
+media: "live-coding performance"
 image: "images/comp.jpg"
 ---
 
@@ -14,4 +14,4 @@ Developed and performed for Manifesta 11 in Zurich as part of the series *Cabare
 
 w/ Python, Tensorflow, FluidSynth, jackd, vim
 
-[less information](http://m11.manifesta.org/en/artist/lars-fabian-tuchel)
+[less information](https://m11.manifesta.org/en/cabaret-archive.html)

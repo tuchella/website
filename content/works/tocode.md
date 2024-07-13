@@ -2,7 +2,7 @@
 title: "to code"
 date: 2019-01-01T10:29:51+01:00
 draft: false
-kind: "live-coding performance"
+media: "live-coding performance"
 vimeo: "https://player.vimeo.com/video/576147553"
 image: "images/tocode.jpg"
 ---

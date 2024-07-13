@@ -2,7 +2,7 @@
 title: "The Mortifying Ordeal of Approximating Order"
 date: 2021-02-01T19:29:51+01:00
 draft: false
-kind: "fixed media"
+media: "fixed media"
 duration: "5:00"
 vimeo: "https://player.vimeo.com/video/503023464"
 image: "images/ordeal.png"
